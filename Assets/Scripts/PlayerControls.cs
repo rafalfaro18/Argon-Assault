@@ -7,7 +7,7 @@ public class PlayerControls : MonoBehaviour
     
     [SerializeField] float controlSpeed = 10f;
     [SerializeField] float xRange = 10f;
-    [SerializeField] float yRange = 10f;
+    [SerializeField] float yRange = 7f;
     
     // Start is called before the first frame update
     void Start()
