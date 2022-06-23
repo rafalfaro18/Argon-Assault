@@ -775,6 +775,8 @@ MonoBehaviour:
   controlSpeed: 30
   xRange: 10
   yRange: 7
+  positionPitchFactor: -2
+  controlPitchFactor: -15
 --- !u!1 &3561624169750792733
 GameObject:
   m_ObjectHideFlags: 0
