@@ -66,19 +66,20 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
-    void DeactivateLasers()
-    {
-        foreach (GameObject laser in lasers)
-        {
-            laser.SetActive(false);
-        }
-    }
 
     void ActivateLasers()
     {
         foreach (GameObject laser in lasers)
         {
             laser.SetActive(true);
+        }
+    }
+
+    void DeactivateLasers()
+    {
+        foreach (GameObject laser in lasers)
+        {
+            laser.SetActive(false);
         }
     }
 }
