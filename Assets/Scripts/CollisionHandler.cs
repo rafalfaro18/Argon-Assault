@@ -10,7 +10,7 @@ public class CollisionHandler : MonoBehaviour
         StartCrashSequence();
     }
 
-    private void StartCrashSequence()
+    void StartCrashSequence()
     {
         GetComponent<PlayerControls>().enabled = false;
         Invoke("ReloadLevel", 1f);
