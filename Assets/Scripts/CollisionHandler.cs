@@ -11,6 +11,7 @@ public class CollisionHandler : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         Debug.Log($"{name} **Triggered by** {other.gameObject.name}");
+        GetComponent<PlayerControls>().enabled = false;
         Invoke("ReloadLevel", 1f);
     }
 
