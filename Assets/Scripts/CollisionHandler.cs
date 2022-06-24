@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
-    void OnCollisionEnter(Collision other) {
-        Debug.Log(name + "--Collided with--" + other.gameObject.name);
+    void OnTriggerEnter(Collider other)
+    {
+        StartCrashSequence();
     }
 
-    void OnTriggerEnter(Collider other) {
-        Debug.Log($"{name} **Triggered by** {other.gameObject.name}");
+    private void StartCrashSequence()
+    {
         GetComponent<PlayerControls>().enabled = false;
         Invoke("ReloadLevel", 1f);
     }
