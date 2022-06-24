@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float controlSpeed = 30f;
     [SerializeField] float xRange = 10f;
     [SerializeField] float yRange = 7f;
+    [SerializeField] GameObject[] lasers;
     [SerializeField] float positionPitchFactor = -2f;
     [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float positionYawFactor = 2f;
@@ -58,9 +60,25 @@ public class PlayerControls : MonoBehaviour
 
     void ProcessFiring() {
         if (Input.GetButton("Fire1")) {
-            Debug.Log("I'm shooting");
+            ActivateLasers();
         } else {
-            Debug.Log("I'm not shooting");
+            DeactivateLasers();
+        }
+    }
+
+    void DeactivateLasers()
+    {
+        foreach (GameObject laser in lasers)
+        {
+            laser.SetActive(false);
+        }
+    }
+
+    void ActivateLasers()
+    {
+        foreach (GameObject laser in lasers)
+        {
+            laser.SetActive(true);
         }
     }
 }
