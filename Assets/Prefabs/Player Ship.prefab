@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadDelay: 1
-  explosionParticles: {fileID: 8135570213325985172}
+  crashVFX: {fileID: 8135570213325985174}
 --- !u!54 &3094304985530228393
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -339,8 +339,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3200836327345539235, guid: d2c744d78799a47488ef7b2f880fbb22, type: 3}
   m_PrefabInstance: {fileID: 6668984076576464178}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8135570213325985172 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3200836327345539238, guid: d2c744d78799a47488ef7b2f880fbb22, type: 3}
+--- !u!198 &8135570213325985174 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3200836327345539236, guid: d2c744d78799a47488ef7b2f880fbb22, type: 3}
   m_PrefabInstance: {fileID: 6668984076576464178}
   m_PrefabAsset: {fileID: 0}
