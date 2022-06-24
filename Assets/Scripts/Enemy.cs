@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     void OnParticleCollision(GameObject other) {
-        Destroy(this.gameObject);
+        Debug.Log($"{name} I'm hit by {other.gameObject.name}");
+        Destroy(gameObject);
     }
 }
