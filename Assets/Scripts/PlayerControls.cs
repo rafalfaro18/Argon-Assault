@@ -14,7 +14,7 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float positionYawFactor = 2f;
     [SerializeField] float controlRollFactor = -20f;
-    ParticleSystem.EmissionModule em;
+    ParticleSystem.EmissionModule emissionModule;
 
     float xThrow, yThrow;
     
@@ -72,8 +72,8 @@ public class PlayerControls : MonoBehaviour
     {
         foreach (GameObject laser in lasers)
         {
-            em = laser.GetComponent<ParticleSystem>().emission;
-            em.enabled = true;
+            emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = true;
         }
     }
 
@@ -81,8 +81,8 @@ public class PlayerControls : MonoBehaviour
     {
         foreach (GameObject laser in lasers)
         {
-            em = laser.GetComponent<ParticleSystem>().emission;
-            em.enabled = false;
+            emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = false;
         }
     }
 }
