@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
     {
         Rigidbody rb = gameObject.AddComponent<Rigidbody>();
         rb.useGravity = false;
-        rb.constraints = RigidbodyConstraints.FreezeAll; // Not in the course. Otherwise enemies float.
+        //rb.constraints = RigidbodyConstraints.FreezeAll; // Not in the course. Otherwise enemies float.
     }
 
     void OnParticleCollision(GameObject other)
