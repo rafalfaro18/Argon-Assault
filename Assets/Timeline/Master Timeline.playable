@@ -1714,7 +1714,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: 3962404049087259816}
   m_Children: []
   m_Clips:
   - m_Version: 1
@@ -1803,11 +1803,8 @@ MonoBehaviour:
   m_Version: 0
   m_Tracks:
   - {fileID: -3022023614118717801}
-  - {fileID: 7255503197205312697}
-  - {fileID: 8374999884517617143}
-  - {fileID: -246637901256670104}
-  - {fileID: 7683721753744454365}
-  - {fileID: 6332656694121791254}
+  - {fileID: 3962404049087259816}
+  - {fileID: 2008193182201300759}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
@@ -1837,6 +1834,29 @@ MonoBehaviour:
   searchHierarchy: 0
   active: 1
   postPlayback: 2
+--- !u!114 &2008193182201300759
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fc6f5187a81dc47999eefade6f0935, type: 3}
+  m_Name: Admiral Slackbar
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
 --- !u!114 &3425380868497324633
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1860,6 +1880,34 @@ MonoBehaviour:
   searchHierarchy: 0
   active: 1
   postPlayback: 2
+--- !u!114 &3962404049087259816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fc6f5187a81dc47999eefade6f0935, type: 3}
+  m_Name: Enemy Waves
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children:
+  - {fileID: 7255503197205312697}
+  - {fileID: 8374999884517617143}
+  - {fileID: -246637901256670104}
+  - {fileID: 7683721753744454365}
+  - {fileID: 6332656694121791254}
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
 --- !u!114 &4261198029620098213
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1901,7 +1949,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: 3962404049087259816}
   m_Children: []
   m_Clips:
   - m_Version: 1
@@ -1993,7 +2041,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: 3962404049087259816}
   m_Children: []
   m_Clips:
   - m_Version: 1
@@ -2085,7 +2133,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: 3962404049087259816}
   m_Children: []
   m_Clips:
   - m_Version: 1
@@ -2177,7 +2225,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: 3962404049087259816}
   m_Children: []
   m_Clips:
   - m_Version: 1
