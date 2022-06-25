@@ -709,6 +709,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1047839025411244694, guid: 0b1657cb5d859495287fd907825b8647, type: 3}
+      propertyPath: m_Name
+      value: Player Explosion VFX
+      objectReference: {fileID: 0}
     - target: {fileID: 5982186386074424438, guid: 0b1657cb5d859495287fd907825b8647, type: 3}
       propertyPath: m_Name
       value: Player Rig
