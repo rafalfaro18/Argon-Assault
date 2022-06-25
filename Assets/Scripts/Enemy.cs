@@ -14,10 +14,22 @@ public class Enemy : MonoBehaviour
         scoreBoard = FindObjectOfType<ScoreBoard>(); // Only one score board, the first result.
     }
     
-    void OnParticleCollision(GameObject other) {
+    void OnParticleCollision(GameObject other)
+    {
+        ProcessHit();
+        KillEnemy();
+    }
+
+    private void ProcessHit()
+    {
         scoreBoard.IncreaseScore(scorePerHit);
+    }
+
+    private void KillEnemy()
+    {
         GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parent;
         Destroy(gameObject);
     }
+
 }
