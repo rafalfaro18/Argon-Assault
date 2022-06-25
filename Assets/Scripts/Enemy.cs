@@ -12,12 +12,18 @@ public class Enemy : MonoBehaviour
     
     ScoreBoard scoreBoard; // Not serialized because there's only one.
 
-    void Start() {
+    void Start()
+    {
         scoreBoard = FindObjectOfType<ScoreBoard>(); // Only one score board, the first result.
+        AddRigidBody();
+    }
+
+    void AddRigidBody()
+    {
         Rigidbody rb = gameObject.AddComponent<Rigidbody>();
         rb.useGravity = false;
     }
-    
+
     void OnParticleCollision(GameObject other)
     {
         ProcessHit();
