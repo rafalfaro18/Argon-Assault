@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3200836327345539238, guid: 59f1dddb4d63d8a4ca64b036797ed3d7, type: 3}
+  parent: {fileID: 314073663}
 --- !u!136 &320177374
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -580,6 +581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3200836327345539238, guid: 59f1dddb4d63d8a4ca64b036797ed3d7, type: 3}
+  parent: {fileID: 314073663}
 --- !u!1 &1287650996
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3200836327345539238, guid: 59f1dddb4d63d8a4ca64b036797ed3d7, type: 3}
+  parent: {fileID: 314073663}
 --- !u!136 &1287650998
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -959,6 +962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathVFX: {fileID: 3200836327345539238, guid: 59f1dddb4d63d8a4ca64b036797ed3d7, type: 3}
+  parent: {fileID: 314073663}
 --- !u!1001 &5982186386959124746
 PrefabInstance:
   m_ObjectHideFlags: 0
