@@ -14,6 +14,10 @@ public class Enemy : MonoBehaviour
     void Start() {
         scoreBoard = FindObjectOfType<ScoreBoard>(); // Only one score board, the first result.
     }
+
+    void Update () {
+        GetComponent<MeshRenderer>().material.color = Color.white;
+    }
     
     void OnParticleCollision(GameObject other)
     {
@@ -24,6 +28,7 @@ public class Enemy : MonoBehaviour
     private void ProcessHit()
     {
         scoreBoard.IncreaseScore(scorePerHit);
+        GetComponent<MeshRenderer>().material.color = Color.magenta;
         hitPoints--;
     }
 
