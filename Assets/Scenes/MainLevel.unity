@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &99087568 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1759441458900969481, guid: 0b1657cb5d859495287fd907825b8647, type: 3}
-  m_PrefabInstance: {fileID: 5982186386959124746}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &145726416 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5201685462281807525, guid: 0b56a1305a37f49d8bd4340d9e6ff134, type: 3}
@@ -421,11 +416,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a74aa9b7d67da4e2d8d59b1f04d6c432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &956953680 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 634321730935565590, guid: 0b1657cb5d859495287fd907825b8647, type: 3}
-  m_PrefabInstance: {fileID: 5982186386959124746}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &967545588
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,76 +483,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1252475004 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5982186386567554171, guid: 0b1657cb5d859495287fd907825b8647, type: 3}
-  m_PrefabInstance: {fileID: 5982186386959124746}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1252475005 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5982186386567554174, guid: 0b1657cb5d859495287fd907825b8647, type: 3}
-  m_PrefabInstance: {fileID: 5982186386959124746}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1252475008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1252475004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 1252475005}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
-  antialiasingMode: 1
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 1
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 0
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!1001 &1298510699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1213,10 +1133,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1047839025411244694, guid: 0b1657cb5d859495287fd907825b8647, type: 3}
-      propertyPath: m_Name
-      value: Player Explosion VFX
-      objectReference: {fileID: 0}
     - target: {fileID: 5982186386074424438, guid: 0b1657cb5d859495287fd907825b8647, type: 3}
       propertyPath: m_Name
       value: Player Rig
@@ -1265,18 +1181,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9106901518254486729, guid: 0b1657cb5d859495287fd907825b8647, type: 3}
-      propertyPath: lasers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9106901518254486729, guid: 0b1657cb5d859495287fd907825b8647, type: 3}
-      propertyPath: lasers.Array.data[0]
-      value: 
-      objectReference: {fileID: 956953680}
-    - target: {fileID: 9106901518254486729, guid: 0b1657cb5d859495287fd907825b8647, type: 3}
-      propertyPath: lasers.Array.data[1]
-      value: 
-      objectReference: {fileID: 99087568}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b1657cb5d859495287fd907825b8647, type: 3}
 --- !u!1001 &7973396056673632297

@@ -65,6 +65,7 @@ GameObject:
   - component: {fileID: 5982186386567554174}
   - component: {fileID: 5982186386567554169}
   - component: {fileID: 5982186386567554168}
+  - component: {fileID: 1252475008}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -138,6 +139,66 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5982186386567554171}
   m_Enabled: 1
+--- !u!114 &1252475008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5982186386567554171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 5982186386567554174}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 1
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 1
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1001 &9110208152538093314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -145,6 +206,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5982186386074424439}
     m_Modifications:
+    - target: {fileID: 4433942939739083, guid: a1b8093e7ab4a4954b97430df194d5b4, type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433942939739083, guid: a1b8093e7ab4a4954b97430df194d5b4, type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 634321730935565590}
+    - target: {fileID: 4433942939739083, guid: a1b8093e7ab4a4954b97430df194d5b4, type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1759441458900969481}
     - target: {fileID: 3271522617972391360, guid: a1b8093e7ab4a4954b97430df194d5b4, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -193,6 +266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 8135570213325985172, guid: a1b8093e7ab4a4954b97430df194d5b4, type: 3}
+      propertyPath: m_Name
+      value: Player Explosion VFX
+      objectReference: {fileID: 0}
     - target: {fileID: 9070366052103601067, guid: a1b8093e7ab4a4954b97430df194d5b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.9
@@ -207,6 +284,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1b8093e7ab4a4954b97430df194d5b4, type: 3}
+--- !u!1 &634321730935565590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8547944565533784596, guid: a1b8093e7ab4a4954b97430df194d5b4, type: 3}
+  m_PrefabInstance: {fileID: 9110208152538093314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1759441458900969481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7351911594479435531, guid: a1b8093e7ab4a4954b97430df194d5b4, type: 3}
+  m_PrefabInstance: {fileID: 9110208152538093314}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5983945211368237762 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3271522617972391360, guid: a1b8093e7ab4a4954b97430df194d5b4, type: 3}
